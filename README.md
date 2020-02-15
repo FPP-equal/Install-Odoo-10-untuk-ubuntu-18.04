@@ -3,7 +3,7 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 
 
 
-**1.Update ubuntu**
+## 1.Update ubuntu
 
 ```sudo apt update && sudo apt dist-upgrade```
 
@@ -11,7 +11,7 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 
 
 
-**2.Install aplikasi pendukung python**
+## 2.Install aplikasi pendukung python
 
 ```sudo apt install python-pip python-dev libevent-dev gcc libxml2-dev node-less python-cups python-dateutil python-decorator python-docutils python-feedparser python-gdata python-geoip python-gevent python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock python-openid python-passlib python-psutil python-psycopg2 python-pychart python-pydot python-pyparsing python-reportlab python-requests python-simplejson python-tz python-unicodecsv python-unittest2 python-vatnumber python-vobject python-werkzeug python-xlwt python-yaml python-babel python-pil```
 
@@ -19,13 +19,15 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 
 
 
-**3.Buat akun baru untuk user Odoo**
+
+## 3.Buat akun baru untuk user Odoo
 
 ```sudo adduser --system --home=/opt/odoo --group odoo```
 
 
 
-**4. Install wkhtmltopdf (64 bit) untuk keperluan print ke pdf**
+
+## 4. Install wkhtmltopdf (64 bit) untuk keperluan print ke pdf
 
 ```sudo apt install fontconfig fontconfig-config fonts-dejavu-core libfontconfig1 libfontenc1 libjpeg-turbo8 libxrender1 x11-common xfonts-75dpi xfonts-base```
 
@@ -39,7 +41,8 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 
 
 
-**6.Install Postgresql dan buat akun user Odoo 10 untuk Postgresql**
+
+## 6.Install Postgresql dan buat akun user Odoo 10 untuk Postgresql
 
 ```sudo apt install postgresql```
 
@@ -51,7 +54,8 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 
 
 
-**7.Ambil Odoo 10 dari sumber repository**
+
+## 7.Ambil Odoo 10 dari sumber repository
 
 ```sudo apt install git```
 
@@ -61,7 +65,8 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 
 
 
-**8.Pengaturan server odoo**
+
+## 8.Pengaturan server odoo
 
 Ubah kepemilikan ke user odoo
 
@@ -77,7 +82,8 @@ Instalasi file pengaturan, Copy odoo.conf ke /etc directory:
 
 
 
-**9.Membuat file log**
+
+## 9.Membuat file log
 
 ```sudo mkdir /var/log/odoo```
 
@@ -89,7 +95,8 @@ Instalasi file pengaturan, Copy odoo.conf ke /etc directory:
 
 
 
-**10.init script**
+
+## 10.init script
 
 Buatlah sistem unit 'odoo server' agar aplikasi menjadibersifat service
 
@@ -117,11 +124,13 @@ reload sistem process
 
 ```sudo systemctl daemon-reload```
 
-**11.Testing Odoo**
+
+## 11.Testing Odoo
 
 masukan Localhost:8096 atau http://192.168.1.200:8069 ke addres bar pada browser anda, jika instalasi berhasil maka Odoo akan muncul
 
-**Referensi:**
+
+## Referensi
 
 -https://github.com/anicetkeric/odoo_v10
 
