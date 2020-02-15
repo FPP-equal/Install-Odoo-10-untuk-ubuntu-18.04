@@ -64,6 +64,7 @@ berikut adalah langkah - langkah instalasi odoo 10 di ubuntu 18.04
 **8.Pengaturan server odoo**
 
 Ubah kepemilikan ke user odoo
+
 ```sudo chown -R odoo: * ```
 
 Instalasi file pengaturan, Copy odoo.conf ke /etc directory:
