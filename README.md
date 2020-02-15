@@ -67,6 +67,7 @@ Ubah kepemilikan ke user odoo
 ```sudo chown -R odoo: * ```
 
 Instalasi file pengaturan, Copy odoo.conf ke /etc directory:
+
 ```sudo cp /opt/odoo/odoo/debian/odoo.conf /etc/odoo-server.conf```
 
 ```sudo chown odoo: /etc/odoo-server.conf```
@@ -76,6 +77,7 @@ Instalasi file pengaturan, Copy odoo.conf ke /etc directory:
 
 
 **9.Membuat file log**
+
 ```sudo mkdir /var/log/odoo```
 
 ```sudo chown odoo:root /var/log/odoo```
